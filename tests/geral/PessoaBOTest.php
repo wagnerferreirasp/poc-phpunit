@@ -13,7 +13,6 @@ class PessoaBOTest extends \PHPUnit_Framework_TestCase {
      */
     public function testGetPessoaMaisVelha() {
         $stubDAO = $this->getMockBuilder('\geral\PessoaDAO')
-                        ->setMethods(null)
                         ->getMock();
         $listaFake = array();
         $listaFake[] = new Pessoa("ADB", 5);
