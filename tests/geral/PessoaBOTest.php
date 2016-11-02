@@ -6,12 +6,6 @@ namespace geral;
  */
 class PessoaBOTest extends \PHPUnit_Framework_TestCase {
 
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp() {
-    }
 
     /**
      * @covers geral\PessoaBO::getPessoaMaisVelha
@@ -24,9 +18,9 @@ class PessoaBOTest extends \PHPUnit_Framework_TestCase {
         $listaFake = array();
         $listaFake[] = new Pessoa("ADB", 5);
         $listaFake[] = new Pessoa("BASD", 9);
-        /*$stubDAO->method('getTodasAsPessoas')
-                ->will($this->returnValue($listaFake));*/
-        $bo = new \geral\PessoaBO($stubDAO);
+        $stubDAO->method('getTodasAsPessoas')
+                ->will($this->returnValue($listaFake));
+        $bo = new PessoaBO($stubDAO);
         $this->assertEquals("BASD", $bo->getPessoaMaisVelha()->getNome());
     }
     
