@@ -2,5 +2,10 @@ language: php
 
 php:
   - '7.0'
+
+branches:
+  except:
+    - dev
+
   
 script: phpunit --bootstrap vendor/autoload.php -- tests
