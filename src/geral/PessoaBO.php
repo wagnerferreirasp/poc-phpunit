@@ -25,7 +25,7 @@ class PessoaBO {
 
     
     public function getMaisNovo(Pessoa $p1, Pessoa $p2) {
-        if ($p1->getIdade() < $p2->getIdade()) {
+        if ($p1->getIdade() > $p2->getIdade()) {
             return $p1;
         }
         return $p2;
