@@ -1,7 +1,10 @@
 {
  "autoload": {
    "psr-4": {
-      "geral\\": "geral/"
+      "geral\\": "src/geral"
    }
+ },
+ "require": {
+  "phpunit/php-code-coverage": "^4.0"
  }
-} 
+}
