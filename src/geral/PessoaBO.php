@@ -1,4 +1,5 @@
-<?php
+<?php 
+namespace geral;
 
 use geral\Pessoa;
 use geral\PessoaDAO;
@@ -8,7 +9,6 @@ use geral\PessoaDAO;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-namespace geral;
 
 /**
  * Description of PessoaBO
@@ -43,5 +43,9 @@ class PessoaBO {
             }
         }
         return $maisVelho;
+    }
+    
+    public function getBlablabla() {
+        echo "oi";
     }
 }

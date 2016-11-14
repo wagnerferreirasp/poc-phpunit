@@ -7,4 +7,4 @@ branches:
   - master
 
   
-script: phpunit --bootstrap vendor/autoload.php -- tests
+script: phpunit --configuration tests/configuration.xml tests
